@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <img src="../../../assets/images/Hireup%20logo.svg">
+            </div>
+            <form action="#" class="search">
+                <button class="search__button">
+                    <img class="search__icon" src="assets/icons/search.svg" alt="">
+                </button>
+
+                <input type="text" class="search__input" placeholder="quick job search...">
+            </form>
+            <nav class="user-nav">
+
+                <div class="user-nav__icon-box">
+
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#settings'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">settings</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#dashboard'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">dashboard</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#messages'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">messages</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#notifications'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">notifications</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="assets/images/user.png" alt="User photo" class="user-nav__user-photo">
+                    <!--<span class="user-nav__user-name">Miky</span>-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="recruiter-job__dashboard-page">
+
+        <div class="tabs">
+            <div class="tabs__tabs-panel">
+                <div class="tabs-list">
+                    <div class="tabs-list__item is-active">
+                        <div class="tabs-list__item-caption">My openings</div>
+                    </div>
+                    <div class="tabs-list__item">
+                        <div class="tabs-list__item-caption">Openings</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tabs__content-panel first">
+                <div class="tabs-content">
+                    <div class="tabs-content__filter">
+                        <span>Status:</span>
+                        <div class="form-group">
+                            <input type="radio" name="radio1" id="radio-0" value="radio-0" checked="checked" />
+                            <label for="radio-0">All</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio1" id="radio-1" value="radio-1" />
+                            <label for="radio-1">Online</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio1" id="radio-2" value="radio-2" />
+                            <label for="radio-2">Offline</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio1" id="radio-3" value="radio-3" />
+                            <label for="radio-3">Closed</label>
+                        </div>
+
+                    </div>
+
+                    <div class="tabs-content__item is-active">
+                        <div class="table-responsive">
+                            <table class="table table-hover earning-box">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Job title</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <td style="width:50px;">
+                                            <span class="round">
+                                                <img alt="user" src="ing.svg" width="50">
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <h6>ING</h6>
+                                            <small class="text-muted">Web Designer</small>
+                                        </td>
+                                        <td>
+                                            <span class="label label-success">Online</span>
+                                            <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                    26.09.2018</small></span>
+                                        </td>
+                                        <td>
+                                            <span tooltip="Close job"><i class="fas fa-lock"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="round">
+                                                <img alt="user" src="ing.svg" width="50">
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <h6>ING</h6>
+                                            <small class="text-muted">Project Manager</small>
+                                        </td>
+                                        <td>
+                                            <span class="label label-warning">Offline</span>
+                                            <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                    26.09.2018</small></span>
+                                        </td>
+                                        <td>
+                                            <span tooltip="Make online"><i class="fas fa-unlock"></i></span>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="round round-success">
+                                                <img alt="user" src="ing.svg" width="50">
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <h6>ING</h6>
+                                            <small class="text-muted">Developer</small>
+                                        </td>
+                                        <td>
+                                            <span class="label label-danger">Closed</span>
+                                            <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                    26.09.2018</small></span>
+                                        </td>
+                                        <td>
+                                            <span tooltip="Open job"><i class="fas fa-lock-open"></i></span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tabs-content__details">
+                            <div class="actions">
+                                <button class="btn btn--red btn--md">
+                                    <i class="fas fa-lock"></i>
+                                    Close
+                                </button>
+                                <button class="btn btn--blue btn--md">
+                                    <i class="fas fa-pen"></i>
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="info">
+                                <div class="form-group">
+                                    <span>Status: </span>
+                                    <span>Published </span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Job title: </span>
+                                    <span>Web designer </span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Reward: </span>
+                                    <span>300$ </span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Location: </span>
+                                    <span>Crystal Tower </span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Description: </span>
+                                    <div class="info__description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis
+                                            diam in odio iaculis blandit. Nunc eu mauris sit amet purus viverra gravida
+                                            ut a dui.
+
+                                            Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci
+                                            sagittis, vehicula lorem et, dignissim nunc.
+                                            Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt
+                                            magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus
+                                            felis.
+                                            Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus.
+                                            Aenean viverra mi at urna mattis fermentum.
+                                            Curabitur porta metus in tortor elementum, in semper nulla ullamcorper.
+                                            Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam
+                                            condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis
+                                            facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</p>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <img src="img/1.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/2.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/3.jpeg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/4.jpeg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/5.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <div class="form-group">
+                                    <span>YouTube URL: </span>
+                                    <span><a href="">www.youtube.com</a> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-content__item">
+                            <div class="table-responsive">
+                                    <table class="table table-hover earning-box">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Job title</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="active">
+                                                <td style="width:50px;">
+                                                    <span class="round">
+                                                        <img alt="user" src="ing.svg" width="50">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h6>ING</h6>
+                                                    <small class="text-muted">Web Designer</small>
+                                                </td>
+                                                <td>
+                                                    <span class="label label-success">Online</span>
+                                                    <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                            26.09.2018</small></span>
+                                                </td>
+                                                <td>
+                                                    <span tooltip="Close job"><i class="fas fa-lock"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="round">
+                                                        <img alt="user" src="ing.svg" width="50">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h6>ING</h6>
+                                                    <small class="text-muted">Project Manager</small>
+                                                </td>
+                                                <td>
+                                                    <span class="label label-warning">Offline</span>
+                                                    <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                            26.09.2018</small></span>
+                                                </td>
+                                                <td>
+                                                    <span tooltip="Make online"><i class="fas fa-unlock"></i></span>
+        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="round round-success">
+                                                        <img alt="user" src="ing.svg" width="50">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <h6>ING</h6>
+                                                    <small class="text-muted">Developer</small>
+                                                </td>
+                                                <td>
+                                                    <span class="label label-danger">Closed</span>
+                                                    <span class="added-by text-muted"><small>Added by <u>Admin</u>, on
+                                                            26.09.2018</small></span>
+                                                </td>
+                                                <td>
+                                                    <span tooltip="Open job"><i class="fas fa-lock-open"></i></span>
+                                                </td>
+                                            </tr>
+        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tabs-content__details">
+                                    <div class="actions">
+                                        <button class="btn btn--blue btn--md">
+                                                <i class="fas fa-gavel"></i>
+                                            Assign to me
+                                        </button>
+                                        <button class="btn btn--blue btn--md">
+                                            <i class="fas fa-pen"></i>
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <div class="info">
+                                        <div class="form-group">
+                                            <span>Status: </span>
+                                            <span>Published </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <span>Job title: </span>
+                                            <span>Web designer </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <span>Reward: </span>
+                                            <span>300$ </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <span>Location: </span>
+                                            <span>Crystal Tower </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <span>Description: </span>
+                                            <div class="info__description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis
+                                                    diam in odio iaculis blandit. Nunc eu mauris sit amet purus viverra gravida
+                                                    ut a dui.
+        
+                                                    Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci
+                                                    sagittis, vehicula lorem et, dignissim nunc.
+                                                    Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt
+                                                    magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus
+                                                    felis.
+                                                    Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus.
+                                                    Aenean viverra mi at urna mattis fermentum.
+                                                    Curabitur porta metus in tortor elementum, in semper nulla ullamcorper.
+                                                    Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam
+                                                    condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis
+                                                    facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</p>
+                                            </div>
+                                        </div>
+        
+                                        <ul>
+                                            <li>
+                                                <img src="img/1.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="img/2.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="img/3.jpeg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="img/4.jpeg" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="img/5.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="form-group">
+                                            <span>YouTube URL: </span>
+                                            <span><a href="">www.youtube.com</a> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var tabs;
+        var contents;
+        var content_parent;
+
+        tabs = document.querySelectorAll('.tabs-list__item');
+        contents = document.querySelectorAll('.tabs-content__item');
+        content_parent = document.querySelector('.tabs__content-panel');
+
+        tabs.forEach(function (elem, i) {
+            elem.onclick = function () {
+                for (let j = 0; j < tabs.length; j++) {
+                    tabs[j].classList.remove('is-active');
+                }
+                this.classList.add('is-active');
+                content_parent.classList.toggle('first');
+
+                for (let j = 0; j < contents.length; j++) {
+                    contents[j].classList.remove('is-active');
+
+                }
+                contents[i].classList.add('is-active');
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>

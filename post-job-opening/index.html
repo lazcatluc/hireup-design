@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/froala_editor.css">
+    <link rel="stylesheet" href="css/froala_style.css">
+    <link rel="stylesheet" href="css/plugins/code_view.css">
+    <link rel="stylesheet" href="css/plugins/draggable.css">
+    <link rel="stylesheet" href="css/plugins/colors.css">
+    <link rel="stylesheet" href="css/plugins/emoticons.css">
+    <link rel="stylesheet" href="css/plugins/image_manager.css">
+    <link rel="stylesheet" href="css/plugins/image.css">
+    <link rel="stylesheet" href="css/plugins/line_breaker.css">
+    <link rel="stylesheet" href="css/plugins/table.css">
+    <link rel="stylesheet" href="css/plugins/char_counter.css">
+    <link rel="stylesheet" href="css/plugins/video.css">
+    <link rel="stylesheet" href="css/plugins/fullscreen.css">
+    <link rel="stylesheet" href="css/plugins/file.css">
+    <link rel="stylesheet" href="css/plugins/quick_insert.css">
+    <link rel="stylesheet" href="css/plugins/help.css">
+    <link rel="stylesheet" href="css/third_party/spell_checker.css">
+    <link rel="stylesheet" href="css/plugins/special_characters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <img src="../../../assets/images/Hireup%20logo.svg">
+            </div>
+            <form action="#" class="search">
+                <button class="search__button">
+                    <img class="search__icon" src="assets/icons/search.svg" alt="">
+                </button>
+
+                <input type="text" class="search__input" placeholder="quick job search...">
+            </form>
+            <nav class="user-nav">
+
+                <div class="user-nav__icon-box">
+
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#settings'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">settings</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#dashboard'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">dashboard</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#messages'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">messages</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg-icon-sprite [src]="'assets/sprites/sprite.svg#notifications'" [classes]="'user-nav__icon'"
+                        [viewBox]="'0 0 100 100'"></svg-icon-sprite>
+                    <span class="user-nav__title">notifications</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="assets/images/user.png" alt="User photo" class="user-nav__user-photo">
+                    <!--<span class="user-nav__user-name">Miky</span>-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="company-page">
+        <div class="company-container">
+            <div class="company">
+                <h3>ING Bank România Sediul Central</h3>
+                <div class="company-logo">
+                    <img src="ing.svg" alt="">
+                </div>
+                <div class="company-description">
+                    Lorem ipsum dolor sit amet, sea aliquid ponderum at, ne cum voluptua sapientem. Te per partiendo
+                    reprimique, vim eu omnes aliquid moderatius, percipit convenire no mea. Ut mei eripuit suscipit
+                    volutpat, eros definitionem qui at, nec an quas zril delicata. Dolore nullam evertitur vix te,
+                    facete euismod ponderum eu quo. Illum elaboraret concludaturque pri id. Pro an fugit
+                    conclusionemque.
+
+                </div>
+            </div>
+            <div class="company-form">
+                <form action="" class="">
+                    <div class="publish-container">
+                        <div class="publish">
+                            <label for="publish">Unpublish</label>
+                            <input type="checkbox" class="check switch" id="publish">
+                            <label for="publish">Publish</label>
+                            <div class="info-group__actions">
+                                <button class="btn btn--blue btn--md">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <button class="btn btn--blue btn--md">
+                                    <i class="fas fa-save"></i>
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-group ">
+                        <div class="form-group">
+                            <label for="job_title">Job Title</label>
+                            <input type="text" id="job_title" name="job_title" class="form-input" placeholder="">
+                        </div>
+                        <div class="form-group divided">
+                            <label for="reward">Reward</label>
+                            <input type="email" id="reward" name="reward" class="form-input" placeholder="RON">
+
+                        </div>
+                        <div class="form-group divided">
+                            <label for="location">Location</label>
+                            <select multiple class="selectpicker">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Barbecue</option>
+                            </select>
+                            <div class="publish-container">
+                                <div class="publish">
+                                    <label for="contract">Contract</label>
+                                    <input type="checkbox" class="check switch no-bg" id="contract">
+                                    <label for="contract">Permanent</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="editor">
+                        <div id='edit' style="margin-top: 30px;">
+                            <h1>Full Featured</h1>
+
+                            <p>This is the full featured Froala WYSIWYG HTML editor.</p>
+
+                            <img class="fr-fir fr-dii" src="img/photo1.jpg" alt="Old Clock" width="300" />Lorem <strong>ipsum</strong>
+                            dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam
+                            in
+                            odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em>
+                            ut a dui.<br />
+                            <ul>
+                                <li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis,
+                                    vehicula
+                                    lorem et, dignissim nunc.</li>
+                                <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit
+                                    amet
+                                    iaculis eros libero sit amet eros. Vestibulum a rhoncus felis.<ol>
+                                        <li>Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus.
+                                            Aenean viverra mi at urna mattis fermentum.</li>
+                                        <li>Curabitur porta metus in tortor elementum, in semper nulla ullamcorper.
+                                            Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam
+                                            condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis
+                                            facilisis.
+                                            Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</li>
+                                    </ol>
+                                </li>
+                            </ul>
+
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                    <td style="width: 25%;"></td>
+                                </tr>
+                            </table>
+
+                            <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit.
+                            Nullam
+                            eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce
+                            ullamcorper,
+                            ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed
+                            dictum
+                            dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum.
+                            Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt
+                            porta
+                            <strong>vehicula.</strong><br />
+                        </div>
+                    </div>
+                </form>
+                <div class="card-upload" data-controller="multi-file-input">
+                    <div class="card-body">
+                        <form method="post" enctype="multipart/form-data">
+                            <label for="filesToUpload" class="btn btn--blue btn--md">
+                                <span></span>Choose file(s)...</span>
+                                <input name="filesToUpload[]" id="filesToUpload" type="file" multiple="" class="form-control"
+                                    data-target="multi-file-input.input" data-action="multi-file-input#append" />
+                            </label>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                        <label for="url">YouTube URL</label>
+                        <input type="text" id="url" name="url" class="form-input" placeholder="">
+                    </div>
+                <div class="info-group__actions">
+                    <button class="btn btn--blue btn--md">
+                        <i class="fas fa-save"></i>
+                        Save
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/i18n/defaults-*.min.js"></script>
+    <script type="text/javascript" src="js/froala_editor.min.js"></script>
+    <script type="text/javascript" src="js/plugins/align.min.js"></script>
+    <script type="text/javascript" src="js/plugins/char_counter.min.js"></script>
+    <script type="text/javascript" src="js/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript" src="js/plugins/code_view.min.js"></script>
+    <script type="text/javascript" src="js/plugins/colors.min.js"></script>
+    <script type="text/javascript" src="js/plugins/draggable.min.js"></script>
+    <script type="text/javascript" src="js/plugins/emoticons.min.js"></script>
+    <script type="text/javascript" src="js/plugins/entities.min.js"></script>
+    <script type="text/javascript" src="js/plugins/file.min.js"></script>
+    <script type="text/javascript" src="js/plugins/font_size.min.js"></script>
+    <script type="text/javascript" src="js/plugins/font_family.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript" src="js/plugins/image.min.js"></script>
+    <script type="text/javascript" src="js/plugins/image_manager.min.js"></script>
+    <script type="text/javascript" src="js/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/inline_style.min.js"></script>
+    <script type="text/javascript" src="js/plugins/link.min.js"></script>
+    <script type="text/javascript" src="js/plugins/lists.min.js"></script>
+    <script type="text/javascript" src="js/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript" src="js/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript" src="js/plugins/quick_insert.min.js"></script>
+    <script type="text/javascript" src="js/plugins/quote.min.js"></script>
+    <script type="text/javascript" src="js/plugins/table.min.js"></script>
+    <script type="text/javascript" src="js/plugins/save.min.js"></script>
+    <script type="text/javascript" src="js/plugins/url.min.js"></script>
+    <script type="text/javascript" src="js/plugins/video.min.js"></script>
+    <script type="text/javascript" src="js/plugins/help.min.js"></script>
+    <script type="text/javascript" src="js/plugins/print.min.js"></script>
+    <script type="text/javascript" src="js/third_party/spell_checker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/special_characters.min.js"></script>
+    <script type="text/javascript" src="js/plugins/word_paste.min.js"></script>
+    <script>
+        $(function () {
+            $('#edit').froalaEditor();
+            $('select').selectpicker();
+        });
+
+    </script>
+</body>
+
+</html>
